@@ -1,14 +1,14 @@
 body {
   background-color: lightblue;
-}
-
-.container {
-
+  max-width: 80%;
 }
 
 .imgContainer {
   display: grid;
-  flex-direction: row;
-  gap: 50px 100px;
-  grid-row-start: 1;
+  width: 70%;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  grid-column-gap: 50px;
+  grid-row-gap: 50px;
+  
 }

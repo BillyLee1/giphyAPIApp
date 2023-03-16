@@ -21,10 +21,22 @@ function fetchGiph(userSearch) {
 function displayPic(apiResponse) {
   let image = document.querySelector('#pic');
   let image2 = document.querySelector('#pic2');
-  image.setAttribute("src", `${apiResponse.data[0].images.original.url}`);
+  let image3 = document.querySelector('#pic3');
+  let image4 = document.querySelector('#pic4');
+  let image5 = document.querySelector('#pic5');
+  let image6 = document.querySelector('#pic6');
+  image.setAttribute("src", `${apiResponse.data[0].images.downsized_medium.url}`);
   image.setAttribute("alt", `${apiResponse.data[0].title}`);
-  image2.setAttribute("src", `${apiResponse.data[2].images.original.url}`);
+  image2.setAttribute("src", `${apiResponse.data[2].images.downsized_medium.url}`);
   image2.setAttribute("alt", `${apiResponse.data[2].title}`);
+  image3.setAttribute("src", `${apiResponse.data[3].images.downsized_medium.url}`);
+  image3.setAttribute("alt", `${apiResponse.data[3].title}`);
+  image4.setAttribute("src", `${apiResponse.data[4].images.downsized_medium.url}`);
+  image4.setAttribute("alt", `${apiResponse.data[4].title}`);
+  image5.setAttribute("src", `${apiResponse.data[5].images.downsized_medium.url}`);
+  image5.setAttribute("alt", `${apiResponse.data[5].title}`);
+  image6.setAttribute("src", `${apiResponse.data[6].images.downsized_medium.url}`);
+  image6.setAttribute("alt", `${apiResponse.data[6].title}`);
 }
 
 function handleFormSubmission(event) {
