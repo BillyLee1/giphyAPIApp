@@ -1,3 +1,14 @@
 body {
   background-color: lightblue;
 }
+
+.container {
+
+}
+
+.imgContainer {
+  display: grid;
+  flex-direction: row;
+  gap: 50px 100px;
+  grid-row-start: 1;
+}
